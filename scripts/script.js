@@ -19,20 +19,7 @@ nameInput.addEventListener('input', function() {
 // ============================================
 // 2. INTERCAMBIO DE IMÁGENES (Requisito JS)
 // ============================================
-const switchImage = document.getElementById('switchImage');
-let currentImage = 1;
-
-switchImage.addEventListener('click', function() {
-  if (currentImage === 1) {
-    switchImage.src = 'images/img2.jpg';
-    switchImage.alt = 'Imagen tecnológica 2';
-    currentImage = 2;
-  } else {
-    switchImage.src = 'images/img1.jpg';
-    switchImage.alt = 'Imagen tecnológica 1';
-    currentImage = 1;
-  }
-});
+let imagenActual = 1; function cambiarImagen() {   const img = document.getElementById("imagen");   imagenActual = imagenActual === 1 ? 2 : 1;   img.src = `images/img${imagenActual}.jpg`; }
 
 
 // ============================================
