@@ -24,11 +24,11 @@ let currentImage = 1;
 
 switchImage.addEventListener('click', function() {
   if (currentImage === 1) {
-    switchImage.src = 'images/photo2.jpg';
+    switchImage.src = 'images/img2.jpg';
     switchImage.alt = 'Imagen tecnológica 2';
     currentImage = 2;
   } else {
-    switchImage.src = 'images/photo1.jpg';
+    switchImage.src = 'images/img1.jpg';
     switchImage.alt = 'Imagen tecnológica 1';
     currentImage = 1;
   }
